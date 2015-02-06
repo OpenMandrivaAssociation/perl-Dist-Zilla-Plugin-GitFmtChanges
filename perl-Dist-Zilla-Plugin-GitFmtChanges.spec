@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	5
 
 Summary:	This Dist::Zilla plugin writes a CHANGES file with commits
 License:	GPL+ or Artistic

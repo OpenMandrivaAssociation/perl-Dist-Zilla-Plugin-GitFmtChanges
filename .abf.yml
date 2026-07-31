@@ -1,2 +1,3 @@
 sources:
-  "Dist-Zilla-Plugin-GitFmtChanges-0.003.tar.gz": 44e4fcdaa496ed912957f5a28e09ce84c594be32
+  Dist-Zilla-Plugin-GitFmtChanges-0.003.tar.gz": 44e4fcdaa496ed912957f5a28e09ce84c594be32
+  Dist-Zilla-Plugin-GitFmtChanges-0.006.tar.gz: ae02fc97e31b44dbacb862744740bfd43ab599e9

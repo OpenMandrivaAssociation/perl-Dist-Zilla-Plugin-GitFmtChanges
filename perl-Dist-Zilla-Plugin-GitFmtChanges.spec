@@ -1,7 +1,7 @@
 %define upstream_name    Dist-Zilla-Plugin-GitFmtChanges
 Name:		perl-%{upstream_name}
-Version:	0.003
-Release:	6
+Version:	0.006
+Release:	1
 
 Summary:	This Dist::Zilla plugin writes a CHANGES file with commits
 License:	GPL+ or Artistic
@@ -25,7 +25,7 @@ This is based on Dist::Zilla::Plugin::ChangelogFromGit.
 This plugin has the following configuration variables:
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n Dist-Zilla-Plugin-GitFmtChanges-0.006
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor

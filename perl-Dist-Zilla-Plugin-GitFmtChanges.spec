@@ -1,7 +1,7 @@
 %define upstream_name    Dist-Zilla-Plugin-GitFmtChanges
 Name:		perl-%{upstream_name}
 Version:	0.006
-Release:	1
+Release:	2
 
 Summary:	This Dist::Zilla plugin writes a CHANGES file with commits
 License:	GPL+ or Artistic
@@ -12,6 +12,7 @@ Source0:	http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{version}.
 BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Text::Wrap)
+BuildRequires:	perl(Test::More)
 BuildArch:	noarch
 
 %description
@@ -37,6 +38,8 @@ perl Makefile.PL INSTALLDIRS=vendor
 %install
 %makeinstall_std
 
+find %{buildroot} -type f -name '*.pm' -exec chmod -x {} +
+if [ -d %{buildroot}%{_bindir} ]; then find %{buildroot}%{_bindir} -type f -exec chmod 755 {} +; fi
 %files
 %doc META.yml LICENSE Changes README
 %{_mandir}/man3/*
